@@ -6,7 +6,10 @@ import {
   useCallback,
   ChangeEvent,
 } from "react";
+
 import List from "./component/List";
+import Notes from "./component/Notes";
+
 const initialTodos = [
   { id: 1, task: "Go shopping" },
   { id: 2, task: "Pay the electricity bill" },
@@ -51,7 +54,7 @@ const App: FC = () => {
 
   return (
     <>
-      <input
+      {/* <input
         type="text"
         value={task}
         onChange={(e: ChangeEvent<HTMLInputElement>) => setTask(e.target.value)}
@@ -59,7 +62,9 @@ const App: FC = () => {
       <button onClick={handleCreate}>Create</button>
       <button onClick={handleSearch}>Search</button>
 
-      <List todoList={todoList} handleDelete={handleDelete} />
+      <List todoList={todoList} handleDelete={handleDelete} /> */}
+      <h1>Notes </h1>
+      <Notes />
     </>
   );
 };
